@@ -1,0 +1,57 @@
+/* General styling for fixed left and right positions */
+.fixed-left, .fixed-right {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px; /* Adjust gap between items */
+  z-index: 1000;
+}
+
+.fixed-left {
+  left: 30px; /* Position from the left */
+}
+
+.fixed-right {
+  right: 30px; /* Position from the right */
+}
+
+/* Vertical line */
+.vertical-line {
+  width: 2px; /* Slightly wider for better visibility */
+  height: 100px; /* Adjust the height as per your design */
+  background-color: #8892b0;
+  opacity: 0.8; /* Increased opacity for better visibility */
+  transition: height 1.5s ease; /* Animation effect */
+}
+
+/* Icon styles */
+.icon {
+  color: #8892b0; /* Icon color */
+  font-size: 24px; /* Increased icon size for better visibility */
+  transition: color 0.3s ease, transform 0.3s ease; /* Hover effect */
+}
+
+.icon:hover {
+  color: #00d7a7; /* Hover color */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Email icon styling for vertical display */
+.vertical-email {
+  writing-mode: vertical-lr;
+  text-align: center;
+  color: #8892b0;
+  transform: rotate(180deg); /* Flip for bottom to top */
+  font-size: 24px; /* Increased size for better visibility */
+}
+
+.vertical-email:hover {
+  color: #00d7a7; /* Hover color */
+}
+
+/* p tag color globally */
+p {
+  color: #8892b0;
+}

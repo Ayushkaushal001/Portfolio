@@ -1,0 +1,220 @@
+.project-section {
+  background-color: #0a192f;
+  padding: 60px 0;
+}
+
+.image-container {
+  padding: 60px;
+  position: relative;
+}
+
+.project-content {
+  padding: 40px;
+  position: relative;
+}
+
+.project-title {
+  font-size: 2rem;
+  color: #64ffda;
+}
+
+.par-odd {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  background-color: #112240;
+  color: #a8b2d1;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 3px;
+  padding-block-start: 10px;
+  margin-left: -60px; /* For odd IDs */
+}
+
+.par-even {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  background-color: #112240;
+  color: #a8b2d1;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 3px;
+  padding-block-end :10px;
+  margin-right: -60px; /* For even IDs */
+}
+
+  .carousel-inner {
+  position: relative; /* Ensure positioning */
+  z-index: 1; /* Set a lower z-index */
+}
+
+.carousel-inner img {
+  position: relative;
+  width: 800px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: -1; /* Ensure image has lower z-index compared to .par */
+}
+
+.tech-stack {
+  margin-top: 20px;
+  color: #64ffda;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.tech-stack span {
+  position: relative; /* Ensure relative positioning for each span */
+  cursor: pointer;
+}
+
+.tech-stack span:hover {
+  color: #64ffda !important;
+  text-decoration: none;
+}
+
+.tech-stack span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #64ffda;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.tech-stack span:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.tech-stack span:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.project-icons {
+  margin-top: 30px;
+}
+
+.project-icons a {
+  color: #8892b0;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+
+
+
+
+
+.project-header {
+  display: flex;
+  align-items: center;
+}
+
+.project-header h2 {
+/*  margin: 0px 0px 10px;*/
+  font-size: 24px; 
+/*  gap: 5px; /* Adjust spacing as needed */
+}
+
+.horizontal-line {
+  width: 200px; /* Adjust width to cover the desired area */
+  height: 1px; /* Adjust height as needed */
+  border: none;
+  border-top: 1px solid #ccc; /* Adjust line color and thickness */
+
+}
+
+.row {
+  align-items: center; /* Aligns image and text in the same horizontal line */
+}
+
+.col-md-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the content vertically */
+}
+
+h2 {
+  margin-bottom: 10px; /* Adjust space between heading and paragraph */
+ /* Moves the h2 up a bit */
+  color: #64ffda;
+  text-align: end;
+}
+
+.icon {
+  color: #8892b0; /* Icon color */
+  font-size: 23px; /* Adjust icon size */
+  transition: color 0.3s ease, transform 0.3s ease; /* Hover effect */
+  margin-top: 10px;
+}
+
+.icon:hover {
+  color: #00d7a7; /* Hover color */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .col-md-5 {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .par-odd, .par-even {
+    margin: 0; /* Remove negative margins */
+    padding: 20px;
+  }
+
+  .project-header h2 {
+    font-size: 20px; /* Reduce font size */
+  }
+
+  h2 {
+    text-align: center; /* Center the heading on small screens */
+  }
+
+  .tech-stack {
+    justify-content: center; /* Center tech stack icons */
+  }
+
+  .icon {
+    margin: 0 auto;
+  }
+
+  .row {
+    margin-top: 20px; /* Adjust space between rows */
+    flex-direction: column; /* Stack columns vertically */
+  }
+}
+
+/* For screens smaller than 576px (small phones) */
+@media (max-width: 576px) {
+  .carousel-inner img {
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .tech-stack {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,28 @@
+<div class="experience-section container justiy-content-center" data-aos="fade-up" data-aos-duration="1000">
+   <div class="project-header">
+     <span  class = "me-2 "style="color: #64ffda; font-size: 20px">02.</span><h2 style="font-size: 24px;" class="me-4"> Experience </h2>
+
+    <hr class="horizontal-line">
+  </div>
+  
+
+  <div class="row">
+    <div class="col-md-3 tabs-container">
+      <ul class="nav flex-column job-tabs">
+        <li *ngFor="let job of Experiences; let i = index" (click)="active = i" 
+            [class.active]="i === active" class="nav-item">
+          <a class="nav-link">{{ job.Tab }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-7 details-container">
+      <div class="job-details">
+        <h4 class="job-title">{{ Experiences[active].Role }} | <span class="company">{{ Experiences[active].Company }}</span></h4>
+        <p class="job-dates">{{ Experiences[active].Dates }}</p>
+        <ul>
+          <li *ngFor="let description of Experiences[active].Descriptions">{{ description }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

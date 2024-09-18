@@ -1,0 +1,39 @@
+<header [class.scrolled]="isScrolled" class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+  <div class="container">
+    <a class="navbar-brand" href="/home">
+      <img src="assets/mario.svg" alt="Logo" width="45" height="45">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link nav-hover" (click)="scroll('about')" data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">
+            <span style="color: #64ffda;">01.</span> About me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-hover" (click)="scroll('experience')" data-aos="fade-down" data-aos-delay="200" data-aos-duration="500">
+            <span style="color: #64ffda;">02.</span> Experience
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-hover" (click)="scroll('projects')" data-aos="fade-down" data-aos-delay="300" data-aos-duration="500">
+            <span style="color: #64ffda;">03.</span> Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-hover" (click)="scroll('contact')" data-aos="fade-down" data-aos-delay="400" data-aos-duration="500">
+            <span style="color: #64ffda;">04.</span> Contact
+          </a>
+        </li>
+        <li class="nav-item">
+          <button (click)="downloadResume()" class="btn custom-btn ms-2 pt-0 pb-0 ps-2 pe-2" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500">
+            Resume
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,203 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  background: linear-gradient(135deg, #0a192f 0%, #0a192f 50%, #0a192f 100%);
+  color: #ccd6f6;
+  min-height: 100vh; 
+  overflow-x: hidden; 
+}
+
+.section.banner {
+  min-height: 100vh;
+  margin-top: 100px; 
+}
+
+.underline {
+  color: #64ffda;
+}
+
+.banner .container {
+  display: table;
+  height: 100vh;
+  width: 100%; 
+}
+
+.banner .container .section-box-banner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.banner .container .section-box-banner .content {
+  margin-top: 10px;
+}
+
+.banner .container .section-box-banner h1 {
+  color: #64ffda;
+  margin: 0 0 20px 3px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'SF Mono', monospace;
+}
+
+.banner .container .section-box-banner h2,
+.banner .container .section-box-banner h3 {
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+  font-family: 'YourMainFontName', sans-serif;
+  background: linear-gradient(120deg, #50efb5, #8ff4ca, #7e57c2, #0087f2, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner .container .section-box-banner h2 {
+  color: #ccd6f6; 
+  font-size: 80px; 
+}
+
+.banner .container .section-box-banner h3 {
+  color: #8892b0; 
+  font-size: 60px; 
+}
+
+.banner .container .section-box-banner .banner-description {
+  margin-bottom: 70px;
+}
+
+.banner .container .section-box-banner p {
+  max-width: 500px;
+}
+
+.banner .container .section-box-banner .div-btn-banner {
+  height: 43px;
+}
+
+.custom-btn {
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: SF Mono, monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.1s ease, border-color 0.1s ease; 
+  padding: 1.25rem 1.75rem;
+}
+
+.custom-btn:hover {
+  border-color: #64ffda;
+  background-color: rgba(100, 255, 218, 0.1); 
+  color: #64ffda; 
+}
+
+.banner-description .descri {
+  text-decoration-color: #8892b0;
+  text-underline-offset: 2px;
+}
+
+.sec {
+  margin-left: 70px;
+  padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0 10px;
+  }
+
+  .section.banner {
+    min-height: auto; 
+  }
+
+  .banner .container {
+    display: block;
+    height: auto;
+  }
+
+  .banner .container .section-box-banner {
+    display: block;
+    text-align: center;
+  }
+
+  .banner .container .section-box-banner .content {
+    margin-top: 30px;
+  }
+
+  .banner .container .section-box-banner h1 {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+  }
+
+  .banner .container .section-box-banner h2,
+  .banner .container .section-box-banner h3 {
+    font-size: 40px;
+  }
+
+  .banner .container .section-box-banner .banner-description {
+    margin-bottom: 40px;
+  }
+
+  .banner .container .section-box-banner p {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner .container .section-box-banner .div-btn-banner {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .custom-btn {
+    font-size: 11px;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .sec {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 0 5px;
+  }
+
+  .banner .container .section-box-banner h1 {
+    font-size: 18px;
+  }
+
+  .banner .container .section-box-banner h2,
+  .banner .container .section-box-banner h3 {
+    font-size: 30px;
+  }
+
+  .banner .container .section-box-banner .banner-description {
+    margin-bottom: 20px;
+  }
+
+  .custom-btn {
+    font-size: 10px;
+    padding: 0.5rem 1rem;
+  }
+
+  .sec {
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .banner-title {
+    color: #ccd6f6;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+  }
+}

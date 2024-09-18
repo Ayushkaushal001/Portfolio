@@ -1,0 +1,58 @@
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #0a192f 0%, #0a192f 50%, #0a192f 100%);
+  color: #ccd6f6;
+  padding: 20px 0;
+
+  box-shadow: none;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+
+}
+
+header.scrolled {
+  background-color: rgba(10, 25, 47, 0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0; /* reduce padding on scroll for a smoother effect */
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Styling for navbar links */
+.nav-link {
+  color: #ccd6f6 !important;
+  margin-right: 12px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.nav-hover:hover {
+  color: #64ffda !important;
+  text-decoration: none;
+}
+
+.nav-hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #64ffda;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-hover:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}

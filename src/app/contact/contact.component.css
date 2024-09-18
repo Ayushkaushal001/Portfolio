@@ -1,0 +1,108 @@
+.footer {
+
+  padding: 80px 0;
+  color: #e5e5e5;
+  font-family: 'Georgia', serif; /* Classic serif font for elegant feel */
+margin-top:280px;
+ 
+}
+
+.footer-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.section-number {
+  color: #80cfa9;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace; /* Give a vintage look */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 40px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.footer-description {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #adb5bd;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background-color: #80cfa9;
+  border: none;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #5a9b80;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer-credits {
+  font-size: 14px;
+  margin-top: 40px;
+  color: #adb5bd;
+}
+
+.footer-credits p {
+  margin: 8px 0;
+}
+
+.footer-credits p:first-of-type {
+  margin-top: 15px;
+  font-style: italic;
+  color: #d1d9e6;
+}
+
+.footer-credits p:last-of-type {
+  font-family: 'Courier New', Courier, monospace; /* Matches section number */
+}
+
+.footer a {
+  text-decoration: none;
+  color: #80cfa9;
+}
+
+.footer a:hover {
+  color: #5a9b80;
+}
+
+
+
+.custom-btn {
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: SF Mono, monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.1s ease, border-color 0.1s ease; /* Very fast transition */
+  padding: 1.25rem 1.75rem;
+  margin-top: 60px;
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  border-color: #64ffda;
+  background-color: rgba(100, 255, 218, 0.1); /* Light background color on hover */
+  color: #64ffda; /* Optional: Ensure text color is visible */
+}
