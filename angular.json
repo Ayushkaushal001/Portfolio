@@ -24,12 +24,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              // "src/custom-theme.scss",
-              "src/styles.css",
-              "node_modules/aos/dist/aos.css",
-              "node_modules/animate.css/animate.min.css"
-            ],
+   "styles": [
+  "node_modules/aos/dist/aos.css",
+  "node_modules/animate.css/animate.min.css"
+],
             "scripts": []
           },
           "configurations": {
@@ -37,17 +35,17 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1mb",  // Increased the warning limit
-                  "maximumError": "2mb"      // Increased the error limit
+                  "maximumWarning": "1mb",  
+                  "maximumError": "2mb"     
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kb",   // Increased the warning limit
-                  "maximumError": "8kb"      // Increased the error limit
+                  "maximumWarning": "4kb",   
+                  "maximumError": "8kb"      
                 }
               ],
               "allowedCommonJsDependencies": [
-                "aos" // Allow CommonJS dependency
+                "aos"
               ],
               "outputHashing": "all"
             },
