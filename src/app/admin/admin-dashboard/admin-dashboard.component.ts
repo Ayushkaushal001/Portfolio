@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -20,7 +22,7 @@ export class AdminDashboardComponent {
 
   projects: any[] = [];
 
-  constructor() {
+  constructor(private router: Router) {
     this.loadProjects(); // Load existing projects from localStorage
   }
 
@@ -67,4 +69,11 @@ export class AdminDashboardComponent {
     localStorage.setItem('projects', JSON.stringify(this.projects));
     this.loadProjects(); // Refresh list
   }
+
+  logout() {
+  localStorage.removeItem('isAdmin'); // ✅ Token remove karo
+  alert('Logged out successfully!');
+  this.router.navigate(['/admin/login']); // ✅ Router se redirect karo
+}
+
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { environment } from '../../../environments/environment';
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -15,10 +16,11 @@ export class LoginComponent {
 
   login() {
     console.log("Entered Password:", this.password); // ✅ Debugging line
-
-    if (this.password.trim() === 'admin123') { // ✅ Added `.trim()` to remove unwanted spaces
+const adminPassword = environment.ADMIN_PASSWORD; 
+    if (this.password.trim() === adminPassword ) { // ✅ Added `.trim()` to remove unwanted spaces
       localStorage.setItem('isAdmin', 'true');
-      this.router.navigate(['/admin/dashboard']);
+   this.router.navigate(['/admin/dashboard']);// ✅ Relative Path
+
     } else {
       alert('Wrong password');
     }
