@@ -10,5 +10,7 @@ export const routes: Routes = [
 	{path : 'home' , component : HomeComponent},
 		{path : '' , component : HomeComponent},
 		{path : 'header' , component : HeaderComponent},
+
+		  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
 		
 	];

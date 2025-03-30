@@ -8,7 +8,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
  import { ProjectsComponent } from './projects/projects.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -28,8 +28,16 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, AfterViewInit {
-
+isAdminRoute:boolean = false;
   isScrolled = false;
+
+ constructor(private router: Router) {
+    // Detect if the current route contains "admin"
+    this.router.events.subscribe(() => {
+      this.isAdminRoute = this.router.url.startsWith('/admin');
+    });
+  }
+
 
   // Listen for scroll event
   @HostListener('window:scroll', [])

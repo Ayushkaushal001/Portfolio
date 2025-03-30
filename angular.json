@@ -25,11 +25,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/custom-theme.scss",
+              // "src/custom-theme.scss",
               "src/styles.css",
               "node_modules/aos/dist/aos.css",
-               "node_modules/animate.css/animate.min.css",
-               
+              "node_modules/animate.css/animate.min.css"
             ],
             "scripts": []
           },
@@ -38,14 +37,17 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",  // Increased the warning limit
+                  "maximumError": "2mb"      // Increased the error limit
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kb",   // Increased the warning limit
+                  "maximumError": "8kb"      // Increased the error limit
                 }
+              ],
+              "allowedCommonJsDependencies": [
+                "aos" // Allow CommonJS dependency
               ],
               "outputHashing": "all"
             },

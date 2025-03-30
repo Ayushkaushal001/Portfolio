@@ -67,7 +67,8 @@ html, body {
 }
 
 .banner .container .section-box-banner .banner-description {
-  margin-bottom: 70px;
+margin-bottom: 40px; /* Reduce the margin to move it up */
+  margin-top: -10px;
 }
 
 .banner .container .section-box-banner p {
@@ -200,4 +201,19 @@ html, body {
     text-align: center;
     margin: 0;
   }
+}
+
+
+
+
+
+
+.animated-text {
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
 }

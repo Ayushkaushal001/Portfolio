@@ -40,13 +40,13 @@
   font-size: 1rem;
   line-height: 1.6;
   border-radius: 3px;
-  padding-block-end :10px;
+  padding-block-end: 10px;
   margin-right: -60px; /* For even IDs */
 }
 
-  .carousel-inner {
-  position: relative; /* Ensure positioning */
-  z-index: 1; /* Set a lower z-index */
+.carousel-inner {
+  position: relative;
+  z-index: 1;
 }
 
 .carousel-inner img {
@@ -55,7 +55,6 @@
   height: 320px;
   object-fit: cover;
   border-radius: 10px;
-  z-index: -1; /* Ensure image has lower z-index compared to .par */
 }
 
 .tech-stack {
@@ -67,7 +66,7 @@
 }
 
 .tech-stack span {
-  position: relative; /* Ensure relative positioning for each span */
+  position: relative;
   cursor: pointer;
 }
 
@@ -94,77 +93,49 @@
   transform: scaleX(1);
 }
 
-
-.tech-stack span:hover::after {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.project-icons {
-  margin-top: 30px;
-}
-
-.project-icons a {
-  color: #8892b0;
-  font-size: 1.5rem;
-  margin-right: 15px;
-}
-
-
-
-
-
-
 .project-header {
   display: flex;
   align-items: center;
 }
 
 .project-header h2 {
-/*  margin: 0px 0px 10px;*/
-  font-size: 24px; 
-/*  gap: 5px; /* Adjust spacing as needed */
+  font-size: 24px;
 }
 
 .horizontal-line {
-  width: 200px; /* Adjust width to cover the desired area */
-  height: 1px; /* Adjust height as needed */
+  width: 200px;
+  height: 1px;
   border: none;
-  border-top: 1px solid #ccc; /* Adjust line color and thickness */
-
+  border-top: 1px solid #ccc;
 }
 
 .row {
-  align-items: center; /* Aligns image and text in the same horizontal line */
+  align-items: center;
 }
 
 .col-md-5 {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers the content vertically */
+  justify-content: center;
 }
 
 h2 {
-  margin-bottom: 10px; /* Adjust space between heading and paragraph */
- /* Moves the h2 up a bit */
+  margin-bottom: 10px;
   color: #64ffda;
   text-align: end;
 }
 
 .icon {
-  color: #8892b0; /* Icon color */
-  font-size: 23px; /* Adjust icon size */
-  transition: color 0.3s ease, transform 0.3s ease; /* Hover effect */
-  margin-top: 10px;
+  color: #8892b0;
+  font-size: 23px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .icon:hover {
-  color: #00d7a7; /* Hover color */
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  color: #00d7a7;
+  transform: scale(1.1);
 }
 
-
-/* For screens smaller than 768px (tablets and phones) */
 @media (max-width: 768px) {
   .col-md-5 {
     width: 100%;
@@ -176,34 +147,26 @@ h2 {
     height: auto;
   }
 
-  .par-odd, .par-even {
-    margin: 0; /* Remove negative margins */
+  .par-odd,
+  .par-even {
+    margin: 0;
     padding: 20px;
   }
 
-  .project-header h2 {
-    font-size: 20px; /* Reduce font size */
-  }
-
   h2 {
-    text-align: center; /* Center the heading on small screens */
+    text-align: center;
   }
 
   .tech-stack {
-    justify-content: center; /* Center tech stack icons */
-  }
-
-  .icon {
-    margin: 0 auto;
+    justify-content: center;
   }
 
   .row {
-    margin-top: 20px; /* Adjust space between rows */
-    flex-direction: column; /* Stack columns vertically */
+    margin-top: 20px;
+    flex-direction: column;
   }
 }
 
-/* For screens smaller than 576px (small phones) */
 @media (max-width: 576px) {
   .carousel-inner img {
     height: 200px;

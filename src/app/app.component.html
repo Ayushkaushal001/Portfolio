@@ -1,24 +1,25 @@
-<div class="fixed-header-container">
-  <app-header [isScrolled]="isScrolled"></app-header>
-</div>
 
+@if (!isAdminRoute) {
+  <div class="fixed-header-container">
+    <app-header [isScrolled]="isScrolled"></app-header>
+  </div>
 
-<div class="fixed-left">
-  <div class="vertical-line" data-aos="fade-up"></div> 
-  <a href="https://github.com/Ayushkaushal001" target="_blank" class="icon github-icon" data-aos="fade-up" data-aos-delay="100">
-    <i class="bi bi-github"></i> 
-  </a>
-  <a href="https://www.linkedin.com/in/ayush-kaushal-695822241/" target="_blank" class="icon linkedin-icon" data-aos="fade-up" data-aos-delay="200">
-    <i class="bi bi-linkedin"></i>
-  </a>
-</div>
+  <div class="fixed-left">
+    <div class="vertical-line" data-aos="fade-up"></div>
+    <a href="https://github.com/Ayushkaushal001" target="_blank" class="icon github-icon" data-aos="fade-up" data-aos-delay="100">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ayush-kaushal-695822241/" target="_blank" class="icon linkedin-icon" data-aos="fade-up" data-aos-delay="200">
+      <i class="bi bi-linkedin"></i>
+    </a>
+  </div>
 
-
-<div class="fixed-right">
-  <div class="vertical-line" data-aos="fade-up"></div> 
-  <a href="mailto:ayushkaushal9090@gmail.com" class="icon email-icon vertical-email" data-aos="fade-up" data-aos-delay="300">
-    <i class="bi bi-envelope"></i> <!-- Email icon from Bootstrap Icons -->
-  </a>
-</div>
+  <div class="fixed-right">
+    <div class="vertical-line" data-aos="fade-up"></div>
+    <a href="mailto:ayushkaushal9090@gmail.com" class="icon email-icon vertical-email" data-aos="fade-up" data-aos-delay="300">
+      <i class="bi bi-envelope"></i>
+    </a>
+  </div>
+}
 
 <router-outlet></router-outlet>

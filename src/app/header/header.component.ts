@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
 export class HeaderComponent {
   @Input() isScrolled!: boolean; // Input binding for scroll status
 
-  ResumeName = 'resume.jpg';
+  ResumeName = 'myresume.png';
 
   downloadResume() {
     let url = window.location.href;
